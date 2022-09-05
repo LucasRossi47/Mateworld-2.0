@@ -1,0 +1,201 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62,5%;
+}
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: green;
+    height: 30px;
+}
+.menu{
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+.menu__link{
+    text-decoration: none;
+    font-size: 1,5em;
+    color: black;
+    border: 0px solid white;
+    padding: 1.2rem;
+    transition: all 1s;
+}
+.submenu{
+    list-style: none;
+    display: none;
+    position: absolute;
+}
+.submenu__link{
+    text-decoration: none;
+    font-size: 1.5 em;
+    padding: 1.2rem;
+    color: black;
+}
+.menu__item:hover .submenu{
+    display: block;
+    background-color: green;
+}
+.submenu__item{
+    padding: 1 rem 0;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: darkgreen;
+}
+.box__texto{
+    background-color: black;
+    width: 100%;
+    height: 40px;
+}
+.texto{
+    color: white;
+    text-align: center;
+    padding-top:10px ;
+}
+.link__productos{
+    text-decoration: none;
+    color: white;
+    align-items: center;
+    padding: 10px;
+}
+.cards{
+    display: flex;
+    margin-top: 30px;
+    margin: 10px;
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+}
+.box__mate{
+    font-size: 1em;
+    margin-bottom: 1 rem;
+    color: black;
+}
+.box__link{
+    font-size: 1em;
+    margin-bottom: 1rem;
+    color: black;
+    text-decoration: none;
+}
+.cards2{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: darkgreen;
+    width: 100%;
+    height: 700px;
+    overflow-y: scroll;
+    border: 3px solid black;
+}
+.box2{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    align-items: center;
+    width: 400px;
+    border: 1px solid black;
+}
+.box2__link{
+    font-size: 0.7em;
+    text-decoration: none;
+    color: white;
+}
+.precio{
+    color: white;
+    text-align: center;
+}
+.card__artesania{
+    display: flex;
+    margin-top: 30px;
+    margin-right: 100px;
+}
+.artesania{
+    width: 500px;
+    height: 500px;
+}
+.artesania__texto{
+    color: black;
+    font-size: 3em;
+    padding-top: 100px;
+}
+.pie__pagina{
+    width: 100%;
+    background-color: rgb(119, 119, 231);
+}
+.pie__pagina .grupo__1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 45px 0px;
+}
+.pie__pagina .grupo__1 .box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pie__pagina .grupo__1 .box figure img{
+    width: 250px;
+}
+.pie__pagina .grupo__1 .box h2{
+    color: white;
+    margin-bottom: 25px;
+    font-size: 20px
+    ;
+}
+.pie__pagina .grupo__1 .box p{
+    color: white;
+    margin-bottom: 10px;
+}
+.pie__pagina .grupo__1 .redSocial a{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: white;
+    margin-right: 10px;
+    background-color: blue;
+    text-align: center;
+    transition: all 300ms ease;
+}
+.pie__pagina .grupo__1 .redSocial a:hover{
+    color: aqua;
+}
+.pie__pagina .grupo-2{
+    background-color: rgb(83, 83, 209) ;
+    padding: 15px 10px;
+    text-align: center;
+    color: white;
+}
+.pie__pagina .grupo-2 small{
+    font-size: 15px;
+}
+@media and (max-width:800px) {
+    .pie__pagina .grupo__1{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+        padding: 35px 0px;
+    }
+}
